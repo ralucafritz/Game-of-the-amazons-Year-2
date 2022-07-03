@@ -217,6 +217,10 @@ class Stare: # Echiv NodParcurge in Cautare - A*
             if final == "remiza":
                 print("Remiza")
             else:
+                if final == 'B':
+                    final = "Black"
+                else
+                    final = "White"
                 print(f"A castigat {final}")
 
             return True
