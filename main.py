@@ -319,11 +319,14 @@ def play():
         print(str(tablaCurenta))
         # creare stare initiala
         stareCurenta = Stare(tablaCurenta, 'B', ADANCIME_MAX)
-        print(str(tablaCurenta))
         while True:
             # muta jucatorul
             if stareCurenta.jCurent == Joc.JMIN:
-                print("Este randul tau! ", stareCurenta.jCurent)
+                print("Este randul tau! ")
+                if(stareCurenta.jCurent == 'W'):
+                    print("Tu joci cu piesele albe!")
+                else:
+                    print("Tu joci cu piesele negre!")
                 raspunsValid = False
                 alegere = 0
                 while not raspunsValid:
@@ -394,6 +397,10 @@ def play():
                 # JMAX = calculator
                 # mutare calculator
                 print("Este randul calculatorului! ")
+                if(stareCurenta.jCurent == 'W'):
+                    print("Calculator joaca cu piesele albe!")
+                else:
+                    print("Calculator joaca cu piesele albe!")
                 # preiau timpul de dinainte de mutare
                 before = int(round(time.time() * 1000))
                 # stare actualizata = starea curenta in care am setat urmatoarea mutare
