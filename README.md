@@ -213,3 +213,5 @@ coloana= 1
 8 |# # # # # # # # # #
 9 |# # # W # # W # # #
 ```
+
+De asemenea, exista si functia de timeout.
