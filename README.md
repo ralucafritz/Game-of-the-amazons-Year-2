@@ -119,3 +119,97 @@ Sunt 2 tipuri de algoritmi folositi in acest caz:
 - algoritmul `AlphaBeta`
 
 In implementarea algoritmilor am folosit doar informatii de baza prezentate in laboratoare.
+
+
+#### Exemplu din consola:
+
+##### Mutare initiala jucator pe pozitia: (0,1)
+```prolog
+Algoritmul folosit? (raspundeti cu 1 sau 2)
+ 1. Minimax 
+ 2. Alpha-beta 
+ 1
+Doriti sa jucati cu 'B' - BLACK sau cu 'W' - WHITE? 
+B
+Tabla initiala
+  |0 1 2 3 4 5 6 7 8 9
+----------------------
+0 |# # # B # # B # # #
+1 |# # # # # # # # # #
+2 |# # # # # # # # # #
+3 |B # # # # # # # # B
+4 |# # # # # # # # # #
+5 |# # # # # # # # # #
+6 |W # # # # # # # # W
+7 |# # # # # # # # # #
+8 |# # # # # # # # # #
+9 |# # # W # # W # # #
+
+Este randul tau!
+Tu joci cu piesele negre! 
+Ai doua alegeri: 
+1. Mutare 
+2. Sageata 
+Ce alegi? 1
+linie= 0
+coloana= 1
+
+ Tabla dupa mutarea jucatorului: 
+  |0 1 2 3 4 5 6 7 8 9
+----------------------
+0 |# B # # # # B # # #
+1 |# # # # # # # # # #
+2 |# # # # # # # # # #
+3 |B # # # # # # # # B
+4 |# # # # # # # # # #
+5 |# # # # # # # # # #
+6 |W # # # # # # # # W
+7 |# # # # # # # # # #
+8 |# # # # # # # # # #
+9 |# # # W # # W # # #
+```
+##### Mutare initiala jucator pe pozitia: (0,1)
+```prolog
+Algoritmul folosit? (raspundeti cu 1 sau 2)
+ 1. Minimax 
+ 2. Alpha-beta 
+ 2
+Doriti sa jucati cu 'B' - BLACK sau cu 'W' - WHITE? 
+B
+Tabla initiala
+  |0 1 2 3 4 5 6 7 8 9
+----------------------
+0 |# # # B # # B # # #
+1 |# # # # # # # # # #
+2 |# # # # # # # # # #
+3 |B # # # # # # # # B
+4 |# # # # # # # # # #
+5 |# # # # # # # # # #
+6 |W # # # # # # # # W
+7 |# # # # # # # # # #
+8 |# # # # # # # # # #
+9 |# # # W # # W # # #
+
+Este randul tau! 
+Tu joci cu piesele negre!
+Ai doua alegeri: 
+1. Mutare 
+2. Sageata 
+Ce alegi? 2
+linie= 0
+coloana= 1
+
+ Tabla dupa mutarea jucatorului: 
+  |0 1 2 3 4 5 6 7 8 9
+----------------------
+0 |# X # B # # B # # #
+1 |# # # # # # # # # #
+2 |# # # # # # # # # #
+3 |B # # # # # # # # B
+4 |# # # # # # # # # #
+5 |# # # # # # # # # #
+6 |W # # # # # # # # W
+7 |# # # # # # # # # #
+8 |# # # # # # # # # #
+9 |# # # W # # W # # #
+```
